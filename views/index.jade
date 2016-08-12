@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div.panel.panel-default(data-ng-controller="PostController")
+        div.panel-heading
+            h4 Create a new Post
+        div.panel-body
+            form
+                div.form-group
+                  input.form-control(placeholder="Enter your title here")
+                div.form-group
+                  textarea.form-control(placeholder="Enter your text here")
+        div.panel-footer
+            button.btn.btn-primary.btn-sm(type="submit") Post
+            button.btn.btn-warning.btn-sm(type="reset") Reset
+
+
+    div.panel.panel-default
+        div.panel-heading
+            h4  List of posts
+        div.panel-body
+            h2
+            p
